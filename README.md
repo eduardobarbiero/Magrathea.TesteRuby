@@ -1,24 +1,10 @@
-# README
+# Teste Desenvolvedor Magrathea Labs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Problematização
 
-Things you may want to cover:
+* Coleta de mensagens do Twitter com base nas hashtags cadastradas.
 
-* Ruby version
+## Modelagem de dados
 
-* System dependencies
+* [Modelagem no Draw.io](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Modelagem%20-%20Magrathea%20Teste%20Ruby.xml#R7Vltb6s2FP41SNuHXoEppP2Y0G53WitdrZOm7cvVKbjg1djIOE3SX79jsAMpoUur9OZeCSlt7MfHb%2Bd5jjk4XpiU618VVMWtzCj3iJ%2BtvfDKIySI4xi%2FDLJpkVnot0CuWGaNOuCOPVMLOrMly2i9Y6il5JpVu2AqhaCp3sFAKbnaNXuQfHfWCnI6AO5S4EP0L5bpokUvyKzDP1OWF27mIL5sW0pwxnYndQGZXPWg8NoLEyWlbkvlOqHcOM%2F5pe33y0jrdmGKCn1IB%2FLbRZj56%2Bd%2FHvOrv8%2BK8vH3%2BZczEtrF6Y3bMc3QAbYqlS5kLgXw6w5dKLkUGTXD%2BlgrdMmxGGDxX6r1xnIISy0R6ka4kbKydu2cZqLRvViolkuV0lc24DQBKqf6Fbt463GUKpUl1WqD%2FRTloNnT7jrAaibf2nVuxYL17Bu8bMd9Ar60M32GutCQewTXFQb%2B1ic9HuoVKzkI4%2FAHKbSjxPgPOMsFllN0F1UIPFGlGYp2bhu0cfUiLRjPbmAjl8YztYb00dUWhVTsGYcFxx02K225w1X1Le5MT8u2ojXafHFMBS%2BgW1jvGN5ArS2QSs6hqtn9dhslksbEQmotS2tkHYXboevXtTHk0naY2XizBw45t%2FVVF75BbLGiF7oR%2BSD2yYB9j%2BBGfQEl1ucN64qJfKAA9IFumFHykSaSS6T6SshWEozzF5BTBacPelQTdQUpznXT2Fydd8gf1hMGktj3gTeHVcGyjIom6DVoaMkzTFWSCd24KlrgBx2a%2BJ8iL8KFJ1gPujp%2BjLnSiRS4F2ANjxSVsaJGHYeRPh5YQyU46uPDmHd2R2c%2BGjB%2FS%2BvaPHGmuD963IfhOwM%2FcB2Pzn88EvkFegcP%2Fyb2C%2FckmIL%2FjcEffd%2FB7zLYAfsts925%2F1Nw7v888X9k%2Ft3j%2FHT8D7O%2Bln%2FMjAtD3bwrT%2BQfl%2FzZxanJvxwhv1rec%2BRGMylaBWSgqWaYCU4aOK4GAv%2F8xCIgZEDqD%2FZybTfwv2%2FXwUhq9o1er4dvWPP95%2BqUW78vt44uX%2BbWwYG5tQvC45Mejpyw3Wu13lTTsfqOl2rynSfWsxHml4pP9ykfSf3pc%2BqLvdQnxJv7lZJIIv3KSsjp10kLH6yFk6fYZN8xEPPmQYx7jHNTan6QQj2UJtPGh4GfcqhrWpsMCf%2FmKI57zKWwHkNpOBT3ddW4rR0JV9YN5sDKASgSqsENXVJh7vZE3aX5GZhKKsu22UtCbz4z%2FxdRswboXwD5jT2SmMGn3vxVN%2F1%2BDfdyxEPlbHWJQNTV%2FmxSyDNiFLgqmKZ3iJupVgqqUeX2s9UjZBovr%2B%2Fj4SVeSKI9iQZ5%2ByUeVruf35q23o%2BY4fV%2F)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
