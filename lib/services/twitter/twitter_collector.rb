@@ -1,4 +1,4 @@
-require 'services/twitter_client'
+require 'services/twitter/twitter_client'
 
 class TwitterCollector
     include TwitterClient
