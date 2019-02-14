@@ -27,7 +27,7 @@ class HashtagsControllerTest < ActionDispatch::IntegrationTest
 
   test "should update hashtag" do
     patch hashtag_url(@hashtag), params: { hashtag: { name: @hashtag.name } }
-    assert_redirected_to hashtag_url(@hashtag)
+    assert_redirected_to hashtags_path
   end
 
   test "should destroy hashtag" do
