@@ -19,5 +19,8 @@ module MagratheaTesteruby
     # Config for Fonts
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
+    # Load de lib paths
+    config.autoload_paths += %W(#{config.root}/lib)
+
   end
 end
