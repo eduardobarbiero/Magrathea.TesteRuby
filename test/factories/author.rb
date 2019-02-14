@@ -7,5 +7,6 @@ FactoryBot.define do
       name { twitter_user[:name] }
       profile_image_url { twitter_user[:profile_image_url] }
       url { twitter_user[:url] }
+      integration_id { twitter_user[:id] }
     end
 end
