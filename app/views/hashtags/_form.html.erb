@@ -1,0 +1,21 @@
+<% if @hashtag.errors.any? %>
+  <div id="error_explanation">    
+    <div class="alert alert-danger">
+      <h4 class="alert-heading"><%= pluralize(@hashtag.errors.count, "erro") %> impossibilitou de salvar a hashtag:</h4>
+      <ul>
+      <% @hashtag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+                          
+<div class="row">
+  <div class="col-8">	
+    <div class="form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: 'form-control', placeholder: 'ex: inovacao', autofocus: true, disabled: action_name.eql?('show') %>          
+    </div>
+  </div>
+</div>

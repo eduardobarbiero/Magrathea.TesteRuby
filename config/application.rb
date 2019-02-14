@@ -8,12 +8,16 @@ Bundler.require(*Rails.groups)
 
 module MagratheaTesteruby
   class Application < Rails::Application
+
+    # Locale config
+    config.i18n.default_locale = :'pt-BR'
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration can go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded after loading
-    # the framework and any gems in your application.
+    # Config for Fonts
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
   end
 end

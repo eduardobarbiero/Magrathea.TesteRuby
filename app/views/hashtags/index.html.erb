@@ -1,0 +1,28 @@
+<section id="content">
+
+  <div class="container">
+    <div className="row mt-3">				
+      <div className="col">
+          <div className="row mt-3">
+            <div className="col">
+              <h1><%= t("activerecord.models.hashtag") %></h1>              
+            </div>
+          </div>
+          <div className="row mt-3">
+            <div className="col">  
+                <%= link_to new_hashtag_path, class: "btn btn-primary btn-float waves-effect is-first" do %>
+                  Adicionar
+                <% end %>  						
+            </div>
+          </div>	
+          <br />
+          <div className="row mt-3">
+            <div className="col">				
+              <%= render partial: 'list' %>
+            </div>
+          </div>						
+        </div>						
+      </div>	
+    </div>        
+  </div>
+</section>

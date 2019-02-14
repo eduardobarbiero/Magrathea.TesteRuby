@@ -1,0 +1,20 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>        
+        <th><%= t("activerecord.attributes.hashtag.name") %></th>        
+        <th width="5%"></th>
+        <th width="5%"></th>                
+      </tr>
+    </thead>
+    <tbody>
+      <% @hashtags.each do |hashtag| %>
+        <tr>
+            <td><%= link_to hashtag.name, hashtag %></td>
+            <td><%= link_to 'Editar', edit_hashtag_path(hashtag), class: 'btn btn-warning' %></td>
+            <td><%= link_to 'Excluir', hashtag, class: 'btn btn-danger', method: :delete, data: { confirm: 'Tem certeza que deseja excluir?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<div>

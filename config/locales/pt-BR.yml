@@ -1,0 +1,25 @@
+pt-BR:  
+  navbar:
+    title: Inicio
+    hashtags: Hastags
+
+  activerecord:
+    models:
+      hashtag: Hashtag
+    attributes:
+      hashtag:
+        name: 'Nome'
+    errors:
+      messages:
+        record_invalid: 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+          has_many: Não é possível excluir o registro pois existem %{record} dependentes
+        not_saved:
+          one: 'Não foi possível salvar os dados pois ocorreu um erro. Veja-o abaixo.'
+          other: 'Não foi possível salvar os dados pois ocorreram %{count} erros. Veja-os abaixo.'
+        accepted: deve ser aceito
+        blank: não pode ficar em branco
+        present: deve ficar em branco
+        required: é obrigatório(a)
+        taken: já está em uso
