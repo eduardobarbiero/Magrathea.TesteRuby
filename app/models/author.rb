@@ -1,7 +1,7 @@
 class Author < ApplicationRecord
     validates :integration_id, presence: true, uniqueness: true
 
-    has_many :messages
+    has_many :messages, dependent: :destroy
 
     # rules
     def exist_message? message_id

@@ -3,11 +3,16 @@
         <%= t('navbar.title') %>
     <% end %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav">                
-            <%= link_to t('navbar.hashtags'), hashtags_path, class: " nav-item navbar-link #{current_page?(hashtags_path) ? 'active' : ''}" %>                
-        </div>
+        <ul class="navbar-nav mr-auto">                
+            <li class="nav-item <%= current_page?(hashtags_path) ? 'active' : '' %>">
+                <%= link_to t('navbar.hashtags'), hashtags_path, class: "nav-link" %>                
+            </li>
+            <li class="nav-item <%= current_page?(messages_path) ? 'active' : '' %>">
+                <%= link_to t('navbar.messages'), messages_path, class: "nav-link" %>                
+            </li>
+        </ul>
     </div>
 </nav>

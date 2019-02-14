@@ -1,0 +1,24 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>        
+        <th></th>
+        <th><%= t("activerecord.attributes.message.hashtag") %></th>        
+        <th><%= t("activerecord.attributes.message.author") %></th>      
+        <th><%= t("activerecord.attributes.message.publication") %></th>       
+        <th><%= t("activerecord.attributes.message.text") %></th>                                                   
+      </tr>
+    </thead>
+    <tbody>
+      <% @messages.each do |message| %>
+        <tr>
+            <td><%= link_image message.author.profile_image_url, message.author.url, { :target => 'blank', :class => 'rounded-circle' } %></td>
+            <td><%= message.hashtag.name %></td>
+            <td><%= link_profile message.author.name, message.author.url, { :target => 'blank'} %></td>            
+            <td><%= message.publication.strftime("%d/%m/%Y %H:%M:%S") %></td>
+            <td><%= message.text %></td>            
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<div>

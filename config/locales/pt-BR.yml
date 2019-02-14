@@ -2,13 +2,20 @@ pt-BR:
   navbar:
     title: Inicio
     hashtags: Hastags
+    messages: Mensagens
 
   activerecord:
     models:
       hashtag: Hashtag
+      message: Mensagem
     attributes:
       hashtag:
-        name: 'Nome'
+        name: Nome
+      message:
+        text: Texto
+        publication: 'Publicação'
+        author: Autor
+        hashtag: Hashtag      
     errors:
       messages:
         record_invalid: 'A validação falhou: %{errors}'
@@ -23,3 +30,16 @@ pt-BR:
         present: deve ficar em branco
         required: é obrigatório(a)
         taken: já está em uso
+        invalid: não é válido
+    date:
+      formats:
+        default: "%d/%m/%Y"
+        long: "%d de %B de %Y"
+        short: "%d de %B"
+    time:
+      am: ''
+      formats:
+        default: "%a, %d de %B de %Y, %H:%M:%S %z"
+        long: "%d de %B de %Y, %H:%M"
+        short: "%d de %B, %H:%M"
+      pm: ''
