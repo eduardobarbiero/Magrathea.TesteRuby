@@ -4,6 +4,11 @@ pt-BR:
     hashtags: Hastags
     messages: Mensagens
 
+  messages:
+    filter:
+      title: Filtrar
+      placeholder: por Hashtag
+      button_action: Filtrar
   activerecord:
     models:
       hashtag: Hashtag

@@ -1,6 +1,6 @@
 FactoryBot.define do    
      
-    factory :random_author, class: Author do      
+    factory :random_author, class: Author, aliases: [:author] do      
     
       twitter_user = Faker::Twitter.user(include_status: true)
       

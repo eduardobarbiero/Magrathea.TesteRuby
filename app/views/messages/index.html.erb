@@ -8,7 +8,20 @@
               <h1><%= t("activerecord.models.message") %></h1>              
             </div>
           </div>          
-          <br />
+          <hr/>
+          <div className="row mt-3">
+            <div className="col">		
+              <h4><%= t("messages.filter.title")%></h4>              
+              <%= form_tag(messages_path, method: :get, class: 'form-inline') do |f| %>              
+                  <div class="form-group mx-sm-2 mb-2 row">  
+                    <div class="col">                   
+                      <%= select_tag 'hashtag_id', options_from_collection_for_select(Hashtag.all, "id", "name"), { include_blank: false, class: "form-control", prompt: t('messages.filter.placeholder') } %>                                                           
+                    </div>
+                  </div>
+                  <%= button_tag t('messages.filter.button_action'), class: "btn btn-primary mb-2", id: "filter-action", as: :button %>                
+              <% end %>
+            </div>
+          </div>          
           <div className="row mt-3">
             <div className="col">				
               <%= render partial: 'list' %>
