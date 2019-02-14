@@ -3,7 +3,7 @@ require 'services/twitter/twitter_collector'
 module TwitterHashTagCollect    
     def collect_all_hashtags
         # create the client instance collector
-        twitter_collector = TwitterCollector.new(take: 3, permit_rt: true)
+        twitter_collector = TwitterCollector.new(take: 10, permit_rt: true)
 
         # get all the hastags disponible
         Hashtag.all.each do |hashtag|
