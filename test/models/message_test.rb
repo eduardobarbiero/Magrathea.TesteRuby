@@ -7,7 +7,7 @@ class MessageTest < ActiveSupport::TestCase
     author = create(:random_author)
     
     twitter_status = Faker::Twitter.status
-    message = Message.new(hashtag: hashtag, author: author, text: twitter_status[:text], publication: twitter_status[:created_at])
+    message = Message.new(hashtag: hashtag, author: author, text: twitter_status[:text], publication: twitter_status[:created_at], integration_id: twitter_status[:id_str])
     
     assert message.valid?
   end
