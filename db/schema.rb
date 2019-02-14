@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_14_004252) do
+ActiveRecord::Schema.define(version: 2019_02_14_010430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,4 +30,17 @@ ActiveRecord::Schema.define(version: 2019_02_14_004252) do
     t.index ["name"], name: "index_hashtags_on_name", unique: true
   end
 
+  create_table "messages", force: :cascade do |t|
+    t.bigint "hashtag_id"
+    t.bigint "author_id"
+    t.string "text"
+    t.datetime "publication"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_messages_on_author_id"
+    t.index ["hashtag_id"], name: "index_messages_on_hashtag_id"
+  end
+
+  add_foreign_key "messages", "authors"
+  add_foreign_key "messages", "hashtags"
 end
